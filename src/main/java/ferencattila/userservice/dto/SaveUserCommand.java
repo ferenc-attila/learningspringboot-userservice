@@ -1,2 +1,21 @@
-package ferencattila.userservice.dto;public class SaveUserCommand {
+package ferencattila.userservice.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class SaveUserCommand {
+
+    private Long id;
+
+    private String firstName;
+
+    private String lastName;
+
+    private String email;
+
+    private Long departmentId;
 }

@@ -1,14 +1,12 @@
-package ferencattila.userservice;
+package ferencattila.userservice.mapper;
 
 import ferencattila.userservice.dto.SaveUserCommand;
 import ferencattila.userservice.dto.UserDto;
 import ferencattila.userservice.entity.User;
 import org.mapstruct.Mapper;
-import org.springframework.stereotype.Component;
 
 import java.util.List;
 
-@Component
 @Mapper(componentModel = "spring")
 public interface UserMapper {
 
