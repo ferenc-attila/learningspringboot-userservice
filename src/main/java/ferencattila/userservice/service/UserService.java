@@ -41,7 +41,7 @@ public class UserService {
         Optional<User> result = repository.findById(userId);
         User user = result.orElseThrow(
                 () -> new IllegalArgumentException("Cannot find user by id " + userId));
-        Department department = restTemplate.getForObject("http://localhost:8080/api/departments/" + user.getDepartmentId(),
+        Department department = restTemplate.getForObject("http://Department-Service/api/departments/" + user.getDepartmentId(),
                 Department.class);
         template.setUser(mapper.dtoFromUser(user));
         template.setDepartment(department);
